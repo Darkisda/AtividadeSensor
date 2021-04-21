@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AtividadeSensores</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sensores">Sensores</string>
+    <string name="proximidade">Proximidade</string>
+    <string name="acelerometro">Acelerometro</string>
+    <string name="luz">Luz</string>
+    <string name="giroscopico">Giroscopico</string>
+    <string name="valor_do_sensor">Valor do Sensor</string>
+    <string name="distancia_do_sensor">Distancia do Sensor</string>
+</resources>

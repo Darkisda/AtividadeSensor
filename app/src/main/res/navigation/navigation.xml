@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.atividadesensores.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_proximidadeFragment"
+            app:destination="@id/proximidadeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_acelerometroFragment"
+            app:destination="@id/acelerometroFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_luzFragment"
+            app:destination="@id/luzFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_giroscopicoFragment"
+            app:destination="@id/giroscopicoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/acelerometroFragment"
+        android:name="com.example.atividadesensores.AcelerometroFragment"
+        android:label="fragment_acelerometro"
+        tools:layout="@layout/fragment_acelerometro" />
+    <fragment
+        android:id="@+id/giroscopicoFragment"
+        android:name="com.example.atividadesensores.GiroscopicoFragment"
+        android:label="fragment_giroscopico"
+        tools:layout="@layout/fragment_giroscopico" />
+    <fragment
+        android:id="@+id/luzFragment"
+        android:name="com.example.atividadesensores.LuzFragment"
+        android:label="fragment_luz"
+        tools:layout="@layout/fragment_luz" />
+    <fragment
+        android:id="@+id/proximidadeFragment"
+        android:name="com.example.atividadesensores.ProximidadeFragment"
+        android:label="fragment_proximidade"
+        tools:layout="@layout/fragment_proximidade" />
+</navigation>
