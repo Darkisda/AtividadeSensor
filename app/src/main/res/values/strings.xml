@@ -9,4 +9,7 @@
     <string name="giroscopico">Giroscopico</string>
     <string name="valor_do_sensor">Valor do Sensor</string>
     <string name="distancia_do_sensor">Distancia do Sensor</string>
+    <string name="eixo_x">Eixo X:</string>
+    <string name="eixo_y">Eixo Y:</string>
+    <string name="eixo_z">Eixo Z:</string>
 </resources>

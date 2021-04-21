@@ -33,13 +33,14 @@ class ProximidadeFragment : Fragment() {
 
     private var proximityListener = object: SensorEventListener {
         override fun onAccuracyChanged(sensor: Sensor?, accuracy: Int) {
+//            TODO("Not yet implemented")
         }
 
         override fun onSensorChanged(event: SensorEvent?) {
-            Log.i("DISTANCIA", event!!.values[0].toString())
+//            Log.i("DISTANCIA", event!!.values[0].toString())
 
             binding.apply {
-                sensorValor.text = event.values[0].toString()
+                sensorValor.text = event!!.values[0].toString()
 
                 if(event.values[0] <= 1.5 ) {
                     distanciaValor.text = "Perto"
@@ -54,8 +55,11 @@ class ProximidadeFragment : Fragment() {
     override fun onResume() {
         super.onResume()
 
-        proximitySensor.also {
-            proximity -> sensorManager.registerListener(proximityListener, proximity, SensorManager.SENSOR_DELAY_NORMAL)
+        proximitySensor.also {proximity ->
+            sensorManager.registerListener(
+                proximityListener,
+                proximity,
+                SensorManager.SENSOR_DELAY_NORMAL)
         }
     }
 
