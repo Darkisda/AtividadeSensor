@@ -12,4 +12,6 @@
     <string name="eixo_x">Eixo X:</string>
     <string name="eixo_y">Eixo Y:</string>
     <string name="eixo_z">Eixo Z:</string>
+    <string name="valor">Valor:</string>
+    <string name="intensidade_da_luz">Intensidade da Luz</string>
 </resources>
